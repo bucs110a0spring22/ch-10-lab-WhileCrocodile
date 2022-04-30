@@ -11,6 +11,7 @@ Replace anything surrounded by the `< >` symbols._
 A combat game between a turtle hero and stickmen enemies.
 #### Unique Feature
 Adds an alternate win condition. Win the game by planting (50) trees, and becoming a hero of environmental justice!
+Press/hold space to plant trees. 
 
 ## GRACE DAYS
 Grace days used for this assignment: 0

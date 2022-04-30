@@ -102,6 +102,9 @@ class Controller:
                     sys.exit()
 
     def gameWin(self):
+        '''
+        Draws the game completion screen.
+        '''
         win_message = self.myfont.render('You won!', False, (0, 0, 0))
         self.background.fill((46, 226, 51))
         self.screen.blit(self.background, (0,0))
@@ -114,13 +117,19 @@ class Controller:
                     sys.exit()
                 
     def plantTree(self):
-      x = self.hero.rect.x + 70    # Some random numbers so the tree
-      y = self.hero.rect.y + 30    # lands in front of the hero
-      self.saplings.add(sapling.Sapling(x, y, "assets/sapling2.png"))
-      self.treecount += 1
+        '''
+        Plants a tree in front of the hero.
+        '''
+        x = self.hero.rect.x + 70    # Some random numbers so the tree
+        y = self.hero.rect.y + 30    # lands in front of the hero
+        self.saplings.add(sapling.Sapling(x, y, "assets/sapling2.png"))
+        self.treecount += 1
 
     def updateTreeCount(self):
-      treecount_message = f'Trees planted: {self.treecount}'
-      treecount = self.myfont.render(treecount_message , False, (0, 0, 0))
-      self.screen.blit(treecount, (10, 10))
-      
+        '''
+        Updates the tree count on screen.
+        '''
+        treecount_message = f'Trees planted: {self.treecount}'
+        treecount = self.myfont.render(treecount_message , False, (0, 0, 0))
+        self.screen.blit(treecount, (10, 10))
+        

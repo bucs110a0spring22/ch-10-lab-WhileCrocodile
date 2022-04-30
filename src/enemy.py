@@ -21,5 +21,8 @@ class Enemy(pygame.sprite.Sprite):
         self.speed = 2
 
     def update(self):
-      self.rect.x += random.randrange(-1, 2)
-      self.rect.x += random.randrange(-1, 2)
+        '''
+        Wiggles the enemy (moves the enemy randomly).
+        '''
+        self.rect.x += random.randrange(-1, 2)
+        self.rect.x += random.randrange(-1, 2)
